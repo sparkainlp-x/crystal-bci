@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "crystal-bci: crystallization-learned templates for fail-closed biosignal commands (synthetic)"
+version: 0.1.0
+authors:
+  - family-names: "Brisson"
+    given-names: "Jean-François"
+license: AGPL-3.0-only
+repository-code: "https://github.com/sparkainlp-x/crystal-bci"
+keywords:
+  - synthetic-biosignal
+  - hebbian-learning
+  - spike-triggered-average
+  - fail-closed-gate
+  - brain-computer-interface
+  - classical-simulation
+abstract: >-
+  Applies the membrane-crystallization findings to biosignal
+  commands: a peak-triggered Hebbian learner extracts a blink
+  template (the crystal) unsupervised from a noisy synthetic
+  multichannel stream, and a Youden-calibrated fail-closed gate
+  turns blinks into a 'next' command. Measured: cosine 0.784
+  with the true direction, hit rate 1.000 with 0 false alarms,
+  learned crystal beats a fixed template 1.000/0 vs 0.765/114.
+  Synthetic signals only; not a medical device; the device-data
+  adapter to real recordings is still missing.

@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "crystal-bci: crystallization-learned templates for fail-closed biosignal commands (SYNTHETIC)"
+type: software
+authors:
+  - family-names: "Brisson"
+    given-names: "Jean-François"
+    orcid: "https://orcid.org/0009-0000-9778-5374"
+    affiliation: "Spark AI NLP, Fredericton, New Brunswick, Canada"
+version: 0.1.0
+license: AGPL-3.0-only
+repository-code: "https://github.com/sparkainlp-x/crystal-bci"
+abstract: >-
+  SYNTHETIC. Applies membrane-crystallization findings to biosignal
+  commands: a peak-triggered Hebbian learner extracts a blink template
+  (the crystal) unsupervised from a noisy synthetic multichannel stream,
+  and a Youden-calibrated fail-closed gate turns blinks into a 'next'
+  command. Multi-seed measurements (20 seeds): mean cosine about 0.67,
+  mean hit rate about 0.96; the learned crystal beats a fixed template
+  on average, while seed-7 perfect rates are above the mean. Synthetic
+  signals only; not a medical device; not evaluated on human recordings;
+  the device-data adapter is still missing.
+keywords:
+  - "synthetic-biosignal"
+  - "hebbian-learning"
+  - "spike-triggered-average"
+  - "fail-closed-gate"
+  - "brain-computer-interface"
+  - "classical-simulation"
+  - "synthetic"
+references:
+  - type: software
+    title: "Membrane Crystallization: streaming PCA with a Hebbian running average (SYNTHETIC)"
+    authors:
+      - family-names: "Brisson"
+        given-names: "Jean-François"
+    year: 2026
+    doi: "10.5281/zenodo.23583050"

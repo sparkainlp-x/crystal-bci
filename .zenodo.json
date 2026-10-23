@@ -1,0 +1,56 @@
+{
+  "title": "crystal-bci: crystallization-learned templates for fail-closed biosignal commands (SYNTHETIC)",
+  "version": "0.1.0",
+  "upload_type": "software",
+  "description": "<p>SYNTHETIC. Applies membrane-crystallization findings to biosignal commands: a peak-triggered Hebbian learner extracts a blink template (the crystal) unsupervised from a noisy synthetic multichannel stream, and a Youden-calibrated fail-closed gate turns blinks into a 'next' command. Multi-seed measurements (20 seeds): mean cosine about 0.67, mean hit rate about 0.96; the learned crystal beats a fixed template on average, while seed-7 perfect rates are above the mean. Synthetic signals only; not a medical device; not evaluated on human recordings; the device-data adapter is still missing.</p><p>Acknowledgement: builds on membrane-crystallization; Mun Seok Lee credited on that related package. No endorsement implied.</p>",
+  "creators": [
+    {
+      "name": "Brisson, Jean-François",
+      "orcid": "0009-0000-9778-5374",
+      "affiliation": "Spark AI NLP, Fredericton, New Brunswick, Canada"
+    }
+  ],
+  "license": "AGPL-3.0-only",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "synthetic biosignal",
+    "Hebbian learning",
+    "spike-triggered average",
+    "fail-closed gate",
+    "brain-computer interface",
+    "classical simulation",
+    "synthetic"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23583050",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/sparkainlp-x/crystal-bci",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/sparkainlp-x/membrane-crystallization",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/sparkainlp-x/bci-membrane-latch",
+      "relation": "references",
+      "scheme": "url"
+    }
+  ],
+  "references": [
+    "Brisson, J.-F. (2026). Membrane Crystallization: streaming PCA with a Hebbian running average (SYNTHETIC). https://doi.org/10.5281/zenodo.23583050"
+  ],
+  "communities": [
+    {
+      "identifier": "spark-ai-nlp"
+    }
+  ]
+}

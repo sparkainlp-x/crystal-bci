@@ -105,3 +105,12 @@ def test_sweep_report_labelled():
     text, _ = sweep.report(n_seeds=2)
     assert text.startswith("SYNTHETIC")
     assert "validated" not in text.lower()
+
+
+def test_sweep_spread_reports_sd_median_range():
+    m, se, sd, med, lo, hi = sweep.spread([0.0, 0.0, 3.0, 9.0])
+    assert m == 3.0 and med == 1.5 and lo == 0.0 and hi == 9.0
+    assert abs(sd - statistics.stdev([0.0, 0.0, 3.0, 9.0])) < 1e-12
+    assert abs(se - sd / 2.0) < 1e-12
+    text, _ = sweep.report(n_seeds=2)
+    assert "SD" in text and "median" in text and "standard error" in text
